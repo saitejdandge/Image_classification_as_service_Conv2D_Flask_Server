@@ -1,0 +1,107 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Pixel",
+		"_postman_id": "721f6087-2d4d-3845-ab8b-603e5dbe5a76",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "train",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/train?location=/Users/st185188/Desktop/downloads",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"train"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "/Users/st185188/Desktop/downloads",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "createdataset",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/createdataset?keywords=apple,orange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"createdataset"
+					],
+					"query": [
+						{
+							"key": "keywords",
+							"value": "apple,orange",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "predict",
+			"request": {
+				"url": {
+					"raw": "http://localhost:5000/predict?location=/Users/st185188/Desktop/downloads&file_name=/Users/st185188/Desktop/downloads/10\\ indian\\ note/19.\\ kisspng-indian-10-rupee-note-indian-rupee-banknote-currenc-indian-rupee-banknote-png-photos-5a75c547775f68.371291851517667655489.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"predict"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "/Users/st185188/Desktop/downloads",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "file_name",
+							"value": "/Users/st185188/Desktop/downloads/10\\ indian\\ note/19.\\ kisspng-indian-10-rupee-note-indian-rupee-banknote-currenc-indian-rupee-banknote-png-photos-5a75c547775f68.371291851517667655489.jpg",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
